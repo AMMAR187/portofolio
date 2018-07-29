@@ -221,6 +221,25 @@ main {
   color: azure;
   background: black; }
 
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .box div {
+    padding: 1.5rem 2.5rem;
+    border: 3px solid azure;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    transition: all 1.5s ease-out; }
+    .box div:hover {
+      color: #000;
+      background: #eece1a;
+      padding: 0.5rem 1.5rem; }
+      .box div:hover span {
+        color: azure; }
+
 .main-footer {
   height: 60px;
   padding: 1rem;
