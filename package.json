@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "\"Portofolio\"",
   "main": "index.html",
+  "homepage": "https://AMMAR187.github.io/portofolio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -w scss/ -o dist/css --recursive"
+    "scss": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "\"web-developer",
@@ -14,6 +16,7 @@
   "author": "AMMAR MAHMOUD",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }
 }
