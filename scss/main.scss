@@ -78,7 +78,6 @@ main {
     grid-area: img-bio;
     border: 3px solid $secondary-color;
     border-radius: 50%;
-    align-content: center;
 }
 
 .bio {
@@ -101,6 +100,47 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px $secondary-color solid;
+}
+
+//work / projects
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem;
+    img {
+        width: 100%;
+        border: 3px solid azure;
+        &:hover {
+            opacity: 0.4;
+            border-color: $secondary-color;
+            @include easeout;
+        }
+    }
+}
+
+// Button
+.btn {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.3rem;
+    border: 0;
+    display: block;
+    &:hover {
+        background: $secondary-color;
+        color: set-color($secondary-color);
+        @include easeout;
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    color: black;
+    background: lighten($primary-color, 50);
+}
+
+.btn-dark {
+    @extend .btn;
+    color: azure;
+    background: darken($primary-color, 50);
 }
 
 .main-footer {
