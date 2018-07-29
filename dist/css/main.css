@@ -96,6 +96,40 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  .main {
+    text-align: center;
+    align-items: center; }
+    .main .lg-heading {
+      margin-bottom: 1rem;
+      line-height: 1; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      height: 150px;
+      width: 150px;
+      background: url("../image/resized_pc.jpg"); }
+  .menu-nav {
+    transform: translate3d(-100%, 0, 0);
+    height: 75vh; }
+    .menu-nav .nav-item {
+      font-size: 25px; } }
+
+@media screen and (max-width: 500px) {
+  .main#home h1 {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 3rem; } }
+
 * {
   box-sizing: border-box; }
 
