@@ -100,6 +100,24 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px $secondary-color solid;
+    &:hover {
+        h3 {
+            font-size: 30px;
+            @include easeout;
+        }
+        p {
+            font-size: 20px;
+            @include easeout;
+        }
+        h6 {
+            font-size: 25px;
+            @include easeout;
+        }
+        .br {
+            border-bottom: 3px solid $secondary-color;
+            transition: 0.3s all;
+        }
+    }
 }
 
 //work / projects

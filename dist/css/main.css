@@ -190,6 +190,18 @@ main {
   background: #515151;
   padding: 0.5rem;
   border-bottom: 5px #eece1a solid; }
+  .job:hover h3 {
+    font-size: 30px;
+    transition: all 1.5s ease-out; }
+  .job:hover p {
+    font-size: 20px;
+    transition: all 1.5s ease-out; }
+  .job:hover h6 {
+    font-size: 25px;
+    transition: all 1.5s ease-out; }
+  .job:hover .br {
+    border-bottom: 3px solid #eece1a;
+    transition: 0.3s all; }
 
 .project {
   display: grid;
@@ -299,6 +311,4 @@ main {
     text-align: center;
     font-size: 3rem; }
   .project {
-    grid-template-columns: 1fr; }
-  .box {
-    width: 100%; } }
+    grid-template-columns: 1fr; } }
