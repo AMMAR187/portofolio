@@ -39,6 +39,14 @@
             font-size: 25px;
         }
     }
+    .about-info {
+        grid-template-areas: 'img-bio' 'bio' 'job1''job2' 'job3';
+        grid-template-columns: 1fr;
+        text-align: center;
+        .img-bio {
+            margin: 0 auto;
+        }
+    }
 }
 
 // smartphones
