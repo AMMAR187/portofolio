@@ -232,6 +232,7 @@ main {
     border: 3px solid azure;
     margin-bottom: 3rem;
     font-size: 2rem;
+    overflow: auto;
     transition: all 1.5s ease-out; }
     .box div:hover {
       color: #000;
@@ -256,10 +257,10 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  .main {
+  main {
     text-align: center;
     align-items: center; }
-    .main .lg-heading {
+    main .lg-heading {
       margin-bottom: 1rem;
       line-height: 1; }
   ul.menu-nav,
@@ -292,9 +293,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  .main#home h1 {
+  main#home h1,
+  main#contact h1 {
     margin-top: 10vh;
     text-align: center;
     font-size: 3rem; }
   .project {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .box {
+    width: 100%; } }
