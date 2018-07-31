@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 * {
     box-sizing: border-box;
 }
@@ -9,7 +10,7 @@ body {
     background: $primary-color;
     color: set-color($primary-color);
     height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     margin: 0;
 }
@@ -100,17 +101,24 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: 5px $secondary-color solid;
+    .info-ul {
+        padding: 50px;
+        display: grid;
+        grid-template-areas: 'li-1 li-2 li-3 ' 'li-4 li-5';
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        text-align: center;
+        .info-li i {
+            color: $secondary-color;
+        }
+    }
     &:hover {
-        h3 {
-            font-size: 30px;
-            @include easeout;
-        }
-        p {
-            font-size: 20px;
-            @include easeout;
-        }
-        h6 {
-            font-size: 25px;
+        background: darken($primary-color, 5);
+        border-radius: 5px;
+        @include easeout;
+        .info-li i {
+            color: lighten($secondary-color, 10);
             @include easeout;
         }
         .br {
@@ -118,6 +126,26 @@ main {
             transition: 0.3s all;
         }
     }
+}
+
+.li-1 {
+    grid-area: li-1;
+}
+
+.li-2 {
+    grid-area: li-2;
+}
+
+.li-3 {
+    grid-area: li-3;
+}
+
+.li-5 {
+    grid-area: li-5;
+}
+
+.li-4 {
+    grid-area: li-4;
 }
 
 //work / projects
