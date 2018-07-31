@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 .menu-btn {
   position: absolute;
   right: 35px;
@@ -103,7 +104,7 @@ body {
   background: #444;
   color: azure;
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   margin: 0; }
   body#bg-img {
@@ -190,18 +191,41 @@ main {
   background: #515151;
   padding: 0.5rem;
   border-bottom: 5px #eece1a solid; }
-  .job:hover h3 {
-    font-size: 30px;
+  .job .info-ul {
+    padding: 50px;
+    display: grid;
+    grid-template-areas: 'li-1 li-2 li-3 ' 'li-4 li-5';
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    text-align: center; }
+    .job .info-ul .info-li i {
+      color: #eece1a; }
+  .job:hover {
+    background: #373737;
+    border-radius: 5px;
     transition: all 1.5s ease-out; }
-  .job:hover p {
-    font-size: 20px;
-    transition: all 1.5s ease-out; }
-  .job:hover h6 {
-    font-size: 25px;
-    transition: all 1.5s ease-out; }
-  .job:hover .br {
-    border-bottom: 3px solid #eece1a;
-    transition: 0.3s all; }
+    .job:hover .info-li i {
+      color: #f2d849;
+      transition: all 1.5s ease-out; }
+    .job:hover .br {
+      border-bottom: 3px solid #eece1a;
+      transition: 0.3s all; }
+
+.li-1 {
+  grid-area: li-1; }
+
+.li-2 {
+  grid-area: li-2; }
+
+.li-3 {
+  grid-area: li-3; }
+
+.li-5 {
+  grid-area: li-5; }
+
+.li-4 {
+  grid-area: li-4; }
 
 .project {
   display: grid;
