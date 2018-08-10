@@ -192,13 +192,13 @@ main {
   padding: 0.5rem;
   border-bottom: 5px #eece1a solid; }
   .job .info-ul {
-    padding: 50px;
-    display: grid;
-    grid-template-areas: 'li-1 li-2 li-3 ' 'li-4 li-5';
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
     list-style: none;
     text-align: center; }
+    .job .info-ul .info-li {
+      display: inline;
+      float: left;
+      margin: 0 10px 0 10px;
+      padding: 10px; }
     .job .info-ul .info-li i {
       color: #eece1a; }
   .job:hover {
@@ -212,25 +212,12 @@ main {
       border-bottom: 3px solid #eece1a;
       transition: 0.3s all; }
 
-.li-1 {
-  grid-area: li-1; }
-
-.li-2 {
-  grid-area: li-2; }
-
-.li-3 {
-  grid-area: li-3; }
-
-.li-5 {
-  grid-area: li-5; }
-
-.li-4 {
-  grid-area: li-4; }
-
 .project {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
+  .project .item .pr {
+    font-size: 26px; }
   .project img {
     width: 100%;
     border: 3px solid azure; }
@@ -326,7 +313,11 @@ main {
     .about-info .img-bio {
       margin: 0 auto; }
   .project {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .info-ul {
+    grid-template-areas: 'li-1 li-2 li-3' 'li-4 li-5';
+    grid-gap: 5px;
+    grid-template-columns: repeat(32, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1,
